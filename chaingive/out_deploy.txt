@@ -1,0 +1,2 @@
+Donation contract deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
+ABI and contract address saved to frontend/src/utils/DonationABI.json

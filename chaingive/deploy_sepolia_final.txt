@@ -1,0 +1,26 @@
+﻿[dotenv@17.3.1] injecting env (3) from .env -- tip: ≡ƒöÉ encrypt with Dotenvx: https://dotenvx.com
+[dotenv@17.3.1] injecting env (0) from .env -- tip: ΓÜÖ∩╕Å  suppress all logs with { quiet: true }
+Deploying Donation contract...
+node.exe : ProviderError: insufficient funds for gas * 
+price + value: balance 0, tx cost 1922064064492, 
+overshot 1922064064492
+At C:\Program Files\nodejs\npx.ps1:29 char:3
++   & $NODE_EXE $NPX_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ProviderErr 
+   or: ...t 1922064064492:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    at HttpProvider.request (C:\Users\91932\Desktop\Block
+chain\chaingive\node_modules\hardhat\src\internal\core\pr
+oviders\http.ts:116:21)
+    at processTicksAndRejections 
+(node:internal/process/task_queues:105:5)
+    at HardhatEthersSigner.sendTransaction (C:\Users\9193
+2\Desktop\Blockchain\chaingive\node_modules\@nomicfoundat
+ion\hardhat-ethers\src\signers.ts:185:18)
+    at ContractFactory.deploy (C:\Users\91932\Desktop\Blo
+ckchain\chaingive\node_modules\ethers\src.ts\contract\fac
+tory.ts:111:24)
+    at main (C:\Users\91932\Desktop\Blockchain\chaingive\
+scripts\deploy.js:9:22)
