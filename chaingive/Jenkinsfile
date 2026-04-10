@@ -1,0 +1,36 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Clone Repo') {
+            steps {
+                git 'https://github.com/VEDANTPANDEY35/ARPAN--Blockchain-Based-Donation-System.git'
+            }
+        }
+
+        stage('Go to Project Folder') {
+            steps {
+                dir('chaingive') {
+                    sh 'ls'
+                }
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                dir('chaingive') {
+                    sh 'docker build -t arpan-app .'
+                }
+            }
+        }
+
+        stage('Run Container') {
+            steps {
+                dir('chaingive') {
+                    sh 'docker run -d -p 3000:3000 arpan-app'
+                }
+            }
+        }
+    }
+}
